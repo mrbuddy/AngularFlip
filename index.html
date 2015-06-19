@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="app">
+	
+	<head>
+		<script src="https://code.angularjs.org/1.4.0-beta.2/angular.js"></script>
+		<link rel="stylesheet" href="style.css" />
+		<script src="script.js"></script>
+	</head>
+
+	<body ng-controller="MyCtrl">
+		<card>
+			<front class="cardstyle">
+				Your name: <input type="text" ng-model="name"/>
+				<input type="button" value="Submit" ng-click="flip();"/>
+			</front>
+			<back class="cardstyle">
+				Hello, {{name}}
+				<a  href="javascript:void(0)" value="Flip Again" ng-click="flip(); "> Click back </a>
+			</back>
+		</card> <br/>
+
+		<card>
+			<front class="cardstyle">
+				Your name: <input type="text" ng-model="name"/>	
+				<input type="button" value="Submit" ng-click="flip();"/>
+			</front>
+			<back class="cardstyle">
+				Hello, {{name}}
+				<a  href="javascript:void(0)" value="Flip Again" ng-click="flip(); "> Click back </a>
+			</back>
+		</card>
+	</body>
+</html>
